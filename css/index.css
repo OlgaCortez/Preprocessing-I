@@ -142,17 +142,16 @@ body {
 .container {
   width: 800px;
   margin: 50px auto;
-  /*closes Media Query*/
   /*closes Header*/
   /*closes nav*/
   /*closes a*/
   /*closes main-content*/
   /*closes h2*/
-}
-@media only screen and (max-width: width 500px) {
-  .container {
-    width: 100%;
-  }
+  /*closes for p*/
+  /*closes for ul*/
+  /*closes table*/
+  /*closes td, th*/
+  /*closes tr*/
 }
 .container header {
   width: 100%;
@@ -176,7 +175,7 @@ body {
 .container a {
   text-decoration: none;
   font-size: 1.2rem;
-  color: slategray;
+  color: [object Object];
   font-family: 'Amatic SC', cursive;
   font-weight: bold;
 }
@@ -185,6 +184,7 @@ body {
   justify-content: space-between;
   padding: 30px;
   border-bottom: double slategray;
+  margin: 20px;
 }
 .container h2 {
   width: 100%;
@@ -202,4 +202,35 @@ body {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.2rem;
 }
+.container .work {
+  padding: 10px;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.container table {
+  font-family: 'Cormorant Garamond', serif;
+  border-collapse: collapse;
+  width: 100%;
+  padding: 20px;
+}
+.container td,
+.container th {
+  border: 1px solid slategray;
+  text-align: center;
+  padding: 8px;
+}
+.container tr:nth-child(1) {
+  background-color: lightgray;
+}
 /* closes container*/
+footer {
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  color: darkslategray;
+  padding: 20px;
+  border-top: double slategray;
+}

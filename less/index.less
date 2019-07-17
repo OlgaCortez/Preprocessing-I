@@ -61,6 +61,11 @@ html, body {
 
 @body-font:'Cormorant Garamond', serif;
 
+.font () {
+	color: slategray;
+}
+
+
 .topImage, .coffeeImage {
 	width: 300px;
 	padding: 10px;
@@ -70,10 +75,6 @@ html, body {
 .container {
 	width: 800px;
 	margin: 50px auto;
-
-	@media only screen and (max-width: width 500px){
-		width:100%;
-	}/*closes Media Query*/
 
 	header {
 		width: 100%;
@@ -100,16 +101,18 @@ html, body {
 	a {
 		text-decoration: none;
 		font-size: 1.2rem;
-		color: slategray;
+		color: .font();
 		font-family: @header-font;
 		font-weight: bold;
 	}/*closes a*/
+
 
 	.main-content {
 		display: flex;
 		justify-content: space-between;
 		padding: 30px;
 		border-bottom: double slategray;
+		margin: 20px;
 	}/*closes main-content*/
 
 	h2 {
@@ -123,12 +126,47 @@ html, body {
 	p {
 		font-family: @body-font;
 		font-size: 1.2rem;
-	}
+	}/*closes for p*/
 
 	ul {
 		list-style: circle;
 		font-family: @body-font;
 		font-size: 1.2rem;
+	}/*closes for ul*/
+
+	.work {
+		padding: 10px;
+		font-family: @header-font;
+		text-align: center;
+		font-weight: bold;
+		font-size: 1.2rem;
 	}
+	table {
+		font-family: @body-font;
+		border-collapse: collapse;
+		width: 100%;
+		padding: 20px;
+		}/*closes table*/
+
+	td, th {
+		border: 1px solid slategray;
+		text-align: center;
+		padding: 8px;
+	}/*closes td, th*/
+
+	tr:nth-child(1) {
+		background-color: lightgray;
+	}/*closes tr*/
+
 
  }/* closes container*/
+
+ footer {
+	font-family: @header-font;
+	font-weight: bold;
+	font-size: 1.2rem;
+	text-align: center;
+	color: darkslategray;
+	padding: 20px;
+	border-top: double slategray;
+ }
