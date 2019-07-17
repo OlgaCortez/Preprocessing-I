@@ -158,8 +158,7 @@ html, body {
 		background-color: lightgray;
 	}/*closes tr*/
 
-
- }/* closes container*/
+}/* closes container*/
 
  footer {
 	font-family: @header-font;
@@ -169,4 +168,31 @@ html, body {
 	color: darkslategray;
 	padding: 20px;
 	border-top: double slategray;
+ }
+
+ @media screen and (max-width:500px){
+	 
+	.container{
+		display:flex;
+		flex-direction: column;
+		width: 500px;
+		margin: 10px auto;
+	}
+	header {
+		text-align: center;
+	}
+
+	 
+	.main-content {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	 
+	}
+
+	.bottom-content table {
+		align-items: center;
+		text-align: center;
+	}
+	
  }
