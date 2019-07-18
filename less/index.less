@@ -61,20 +61,18 @@ html, body {
 
 @body-font:'Cormorant Garamond', serif;
 
-.font () {
-	color: slategray;
-}
-
 
 .topImage, .coffeeImage {
 	width: 300px;
 	padding: 10px;
+	border-radius: 40%;
 }
 
 
 .container {
 	width: 800px;
 	margin: 50px auto;
+	
 
 	header {
 		width: 100%;
@@ -101,7 +99,7 @@ html, body {
 	a {
 		text-decoration: none;
 		font-size: 1.2rem;
-		color: .font();
+		color: slategray;
 		font-family: @header-font;
 		font-weight: bold;
 	}/*closes a*/
@@ -141,6 +139,7 @@ html, body {
 		font-weight: bold;
 		font-size: 1.2rem;
 	}
+
 	table {
 		font-family: @body-font;
 		border-collapse: collapse;
@@ -157,6 +156,7 @@ html, body {
 	tr:nth-child(1) {
 		background-color: lightgray;
 	}/*closes tr*/
+
 
 }/* closes container*/
 
@@ -194,5 +194,6 @@ html, body {
 		align-items: center;
 		text-align: center;
 	}
+
 	
  }
